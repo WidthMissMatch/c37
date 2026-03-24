@@ -1,0 +1,29 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../vhdl_modules/pmu_system_complete_256.vhd" \
+"../../../../vhdl_modules/Sample_fetcher.vhd" \
+"../../../../vhdl_modules/packet_validator.vhd" \
+"../../../../vhdl_modules/circular_buffer.vhd" \
+"../../../../vhdl_modules/cordic_calculator_256.vhd" \
+"../../../../vhdl_modules/cos.vhd" \
+"../../../../vhdl_modules/crc_ccitt_c37118.vhd" \
+"../../../../vhdl_modules/cycle_tracker.vhd" \
+"../../../../vhdl_modules/c37118_packet_formatter_6ch.vhd" \
+"../../../../vhdl_modules/dft.vhd" \
+"../../../../vhdl_modules/dft_sample_buffer.vhd" \
+"../../../../vhdl_modules/frequency_rocof_calculator_256.vhd" \
+"../../../../vhdl_modules/channel_extractor.vhd" \
+"../../../../vhdl_modules/pmu_6ch_processing_256.vhd" \
+"../../../../vhdl_modules/axi_packet_receiver_128bit.vhd" \
+"../../../../vhdl_modules/interpolation_engine.vhd" \
+"../../../../vhdl_modules/pmu_processing_top.vhd" \
+"../../../../vhdl_modules/pmu_processing_top_no_freq.vhd" \
+"../../../../vhdl_modules/position_calc.vhd" \
+"../../../../vhdl_modules/input_interface_complete.vhd" \
+"../../../../vhdl_modules/resampler_top.vhd" \
+"../../../../vhdl_modules/sample_counter.vhd" \
+"../../../../vhdl_modules/sine.vhd" \
+"../../../../vhdl_modules/tve_calculator.vhd" \
+
+# Do not sort compile order
+nosort

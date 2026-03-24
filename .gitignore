@@ -1,0 +1,14 @@
+*.wdb
+*.jou
+*.log
+*.pb
+*.zip
+xsim.dir/
+work/
+work-obj*.cf
+__pycache__/
+*.pyc
+.Xil/
+*.lpr
+*.xpr
+*.ip_user_files

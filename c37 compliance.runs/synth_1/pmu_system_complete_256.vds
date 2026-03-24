@@ -1,0 +1,1261 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Feb  9 18:28:38 2026
+# Process ID         : 44323
+# Current directory  : /home/arunupscee/Desktop/xtortion/c37 compliance/c37 compliance.runs/synth_1
+# Command line       : vivado -log pmu_system_complete_256.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pmu_system_complete_256.tcl
+# Log file           : /home/arunupscee/Desktop/xtortion/c37 compliance/c37 compliance.runs/synth_1/pmu_system_complete_256.vds
+# Journal file       : /home/arunupscee/Desktop/xtortion/c37 compliance/c37 compliance.runs/synth_1/vivado.jou
+# Running On         : arunupscee-HP-EliteDesk-800-G8-Tower-PC
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz
+# CPU Frequency      : 1831.779 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16464 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20759 MB
+# Available Virtual  : 14711 MB
+#-----------------------------------------------------------
+source pmu_system_complete_256.tcl -notrace
+Command: synth_design -top pmu_system_complete_256 -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 44377
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2030.297 ; gain = 426.992 ; free physical = 3292 ; free virtual = 12815
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pmu_system_complete_256' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/8.vhd:85]
+INFO: [Synth 8-3491] module 'input_interface_complete' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pyari.vhd:11' bound to instance 'input_interface_inst' of component 'input_interface_complete' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/8.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'input_interface_complete' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pyari.vhd:59]
+INFO: [Synth 8-3491] module 'axi_packet_receiver_128bit' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/input_interbace.vhd:11' bound to instance 'axi_receiver_inst' of component 'axi_packet_receiver_128bit' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pyari.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'axi_packet_receiver_128bit' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/input_interbace.vhd:35]
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/input_interbace.vhd:82]
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/input_interbace.vhd:108]
+INFO: [Synth 8-256] done synthesizing module 'axi_packet_receiver_128bit' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/input_interbace.vhd:35]
+INFO: [Synth 8-3491] module 'packet_validator' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ain_e_akbiri.vhd:11' bound to instance 'packet_validator_inst' of component 'packet_validator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pyari.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'packet_validator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ain_e_akbiri.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'packet_validator' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ain_e_akbiri.vhd:31]
+INFO: [Synth 8-3491] module 'channel_extractor' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:13' bound to instance 'channel_extractor_inst' of component 'channel_extractor' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pyari.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'channel_extractor' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'channel_extractor' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'input_interface_complete' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pyari.vhd:59]
+WARNING: [Synth 8-5640] Port 'tve_percent_ch1' is missing in component declaration [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/8.vhd:122]
+WARNING: [Synth 8-5640] Port 'tve_valid_ch1' is missing in component declaration [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/8.vhd:122]
+WARNING: [Synth 8-5640] Port 'tve_pass_ch1' is missing in component declaration [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/8.vhd:122]
+WARNING: [Synth 8-5640] Port 'tve_exceeds_ch1' is missing in component declaration [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/8.vhd:122]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+	Parameter IDCODE_VAL bound to: 16'b0000000000000001 
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'pmu_6ch_processing_256' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:17' bound to instance 'pmu_processing_inst' of component 'pmu_6ch_processing_256' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/8.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'pmu_6ch_processing_256' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:98]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+	Parameter IDCODE_VAL bound to: 16'b0000000000000001 
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'pmu_processing_top' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:26' bound to instance 'ch1_master_inst' of component 'pmu_processing_top' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:327]
+INFO: [Synth 8-638] synthesizing module 'pmu_processing_top' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:86]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter OUTPUT_SAMPLES bound to: 256 - type: integer 
+INFO: [Synth 8-3491] module 'resampler_top' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:26' bound to instance 'resampler_inst' of component 'resampler_top' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:319]
+INFO: [Synth 8-638] synthesizing module 'resampler_top' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:83]
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter OUTPUT_SAMPLES bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'circular_buffer_controller' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/circular_buffer.vhd:20' bound to instance 'circular_buffer_inst' of component 'circular_buffer_controller' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:293]
+INFO: [Synth 8-638] synthesizing module 'circular_buffer_controller' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/circular_buffer.vhd:50]
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'circular_buffer_controller' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/circular_buffer.vhd:50]
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter INPUT_WIDTH bound to: 32 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'samples_per_cycle_calc' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/sample_counter.vhd:16' bound to instance 'samples_per_cycle_inst' of component 'samples_per_cycle_calc' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:316]
+INFO: [Synth 8-638] synthesizing module 'samples_per_cycle_calc' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/sample_counter.vhd:42]
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter INPUT_WIDTH bound to: 32 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'samples_per_cycle_calc' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/sample_counter.vhd:42]
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COUNT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'cycle_tracker' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cycle_tracker.vhd:22' bound to instance 'cycle_tracker_inst' of component 'cycle_tracker' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:337]
+INFO: [Synth 8-638] synthesizing module 'cycle_tracker' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cycle_tracker.vhd:54]
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COUNT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cycle_tracker.vhd:156]
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cycle_tracker.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'cycle_tracker' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cycle_tracker.vhd:54]
+	Parameter OUTPUT_SAMPLES bound to: 256 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'position_calculator' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/position_calc.vhd:21' bound to instance 'position_calc_inst' of component 'position_calculator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:360]
+INFO: [Synth 8-638] synthesizing module 'position_calculator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/position_calc.vhd:60]
+	Parameter OUTPUT_SAMPLES bound to: 256 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/position_calc.vhd:140]
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/position_calc.vhd:216]
+INFO: [Synth 8-256] done synthesizing module 'position_calculator' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/position_calc.vhd:60]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'sample_fetcher' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/Sample_fetcher.vhd:19' bound to instance 'sample_fetcher_inst' of component 'sample_fetcher' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:386]
+INFO: [Synth 8-638] synthesizing module 'sample_fetcher' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/Sample_fetcher.vhd:59]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sample_fetcher' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/Sample_fetcher.vhd:59]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter FRAC_WIDTH bound to: 16 - type: integer 
+	Parameter INDEX_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'interpolation_engine' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/interpolation_engine.vhd:24' bound to instance 'interpolation_engine_inst' of component 'interpolation_engine' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:418]
+INFO: [Synth 8-638] synthesizing module 'interpolation_engine' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/interpolation_engine.vhd:51]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter FRAC_WIDTH bound to: 16 - type: integer 
+	Parameter INDEX_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'interpolation_engine' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/interpolation_engine.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'resampler_top' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:83]
+	Parameter BUFFER_SIZE bound to: 256 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'dft_sample_buffer' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft_sample_buffer.vhd:20' bound to instance 'dft_buffer_inst' of component 'dft_sample_buffer' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:356]
+INFO: [Synth 8-638] synthesizing module 'dft_sample_buffer' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft_sample_buffer.vhd:45]
+	Parameter BUFFER_SIZE bound to: 256 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dft_sample_buffer' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft_sample_buffer.vhd:45]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter ACCUMULATOR_WIDTH bound to: 48 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dft_complex_calculator' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:5' bound to instance 'dft_inst' of component 'dft_complex_calculator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:377]
+INFO: [Synth 8-638] synthesizing module 'dft_complex_calculator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:43]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter ACCUMULATOR_WIDTH bound to: 48 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:108]
+INFO: [Synth 8-256] done synthesizing module 'dft_complex_calculator' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:43]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter K_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'cosine_single_k_rom' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cos.vhd:6' bound to instance 'cos_rom_inst' of component 'cosine_single_k_rom' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:409]
+INFO: [Synth 8-638] synthesizing module 'cosine_single_k_rom' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cos.vhd:27]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter K_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cosine_single_k_rom' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cos.vhd:27]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter K_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'sine_single_k_rom' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/sine.vhd:6' bound to instance 'sin_rom_inst' of component 'sine_single_k_rom' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:427]
+INFO: [Synth 8-638] synthesizing module 'sine_single_k_rom' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/sine.vhd:27]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter K_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sine_single_k_rom' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/sine.vhd:27]
+	Parameter INPUT_WIDTH bound to: 32 - type: integer 
+	Parameter ANGLE_WIDTH bound to: 16 - type: integer 
+	Parameter ITERATIONS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'cordic_calculator_256' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cordic_calculator_256.vhd:18' bound to instance 'cordic_inst' of component 'cordic_calculator_256' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:445]
+INFO: [Synth 8-638] synthesizing module 'cordic_calculator_256' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cordic_calculator_256.vhd:41]
+	Parameter INPUT_WIDTH bound to: 32 - type: integer 
+	Parameter ANGLE_WIDTH bound to: 16 - type: integer 
+	Parameter ITERATIONS bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cordic_calculator_256.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'cordic_calculator_256' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cordic_calculator_256.vhd:41]
+	Parameter THETA_WIDTH bound to: 16 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'frequency_rocof_calculator_256' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/frequency_rocof_calculator_256.vhd:19' bound to instance 'freq_calc_inst' of component 'frequency_rocof_calculator_256' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:466]
+INFO: [Synth 8-638] synthesizing module 'frequency_rocof_calculator_256' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/frequency_rocof_calculator_256.vhd:46]
+	Parameter THETA_WIDTH bound to: 16 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frequency_rocof_calculator_256' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/frequency_rocof_calculator_256.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'pmu_processing_top' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top.vhd:86]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'pmu_processing_top_no_freq' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:33' bound to instance 'ch2_slave_inst' of component 'pmu_processing_top_no_freq' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'pmu_processing_top_no_freq' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:84]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter OUTPUT_SAMPLES bound to: 256 - type: integer 
+INFO: [Synth 8-3491] module 'resampler_top' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/resampler_top.vhd:26' bound to instance 'resampler_inst' of component 'resampler_top' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:291]
+	Parameter BUFFER_SIZE bound to: 256 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'dft_sample_buffer' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft_sample_buffer.vhd:20' bound to instance 'dft_buffer_inst' of component 'dft_sample_buffer' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:328]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter ACCUMULATOR_WIDTH bound to: 48 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dft_complex_calculator' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:5' bound to instance 'dft_inst' of component 'dft_complex_calculator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:349]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter K_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'cosine_single_k_rom' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cos.vhd:6' bound to instance 'cos_rom_inst' of component 'cosine_single_k_rom' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:381]
+	Parameter WINDOW_SIZE bound to: 256 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter K_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'sine_single_k_rom' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/sine.vhd:6' bound to instance 'sin_rom_inst' of component 'sine_single_k_rom' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:399]
+	Parameter INPUT_WIDTH bound to: 32 - type: integer 
+	Parameter ANGLE_WIDTH bound to: 16 - type: integer 
+	Parameter ITERATIONS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'cordic_calculator_256' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/cordic_calculator_256.vhd:18' bound to instance 'cordic_inst' of component 'cordic_calculator_256' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:417]
+INFO: [Synth 8-256] done synthesizing module 'pmu_processing_top_no_freq' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:84]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'pmu_processing_top_no_freq' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:33' bound to instance 'ch3_slave_inst' of component 'pmu_processing_top_no_freq' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:406]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'pmu_processing_top_no_freq' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:33' bound to instance 'ch4_slave_inst' of component 'pmu_processing_top_no_freq' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:441]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'pmu_processing_top_no_freq' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:33' bound to instance 'ch5_slave_inst' of component 'pmu_processing_top_no_freq' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:476]
+	Parameter SAMPLE_WIDTH bound to: 16 - type: integer 
+	Parameter SAMPLE_RATE bound to: 15000 - type: integer 
+	Parameter DFT_SIZE bound to: 256 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter BUFFER_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+	Parameter DFT_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'pmu_processing_top_no_freq' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/pmu_processing_top_no_freq.vhd:33' bound to instance 'ch6_slave_inst' of component 'pmu_processing_top_no_freq' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:511]
+	Parameter MAG_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter IDCODE_VAL bound to: 16'b0000000000000001 
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'c37118_packet_formatter_6ch' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/daulat_ibrahim.vhd:5' bound to instance 'packet_creator_inst' of component 'c37118_packet_formatter_6ch' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'c37118_packet_formatter_6ch' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/daulat_ibrahim.vhd:69]
+	Parameter MAG_WIDTH bound to: 32 - type: integer 
+	Parameter PHASE_WIDTH bound to: 16 - type: integer 
+	Parameter FREQ_WIDTH bound to: 32 - type: integer 
+	Parameter IDCODE_VAL bound to: 16'b0000000000000001 
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'crc_ccitt_c37118' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/crc_ccitt_c37118.vhd:25' bound to instance 'crc_inst' of component 'crc_ccitt_c37118' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/daulat_ibrahim.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'crc_ccitt_c37118' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/crc_ccitt_c37118.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'crc_ccitt_c37118' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/crc_ccitt_c37118.vhd:54]
+INFO: [Synth 8-226] default block is never used [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/daulat_ibrahim.vhd:317]
+INFO: [Synth 8-256] done synthesizing module 'c37118_packet_formatter_6ch' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/daulat_ibrahim.vhd:69]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 16 - type: integer 
+	Parameter CORDIC_ITER bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'tve_calculator' declared at '/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/tve_calculator.vhd:28' bound to instance 'tve_ch1_inst' of component 'tve_calculator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:615]
+INFO: [Synth 8-638] synthesizing module 'tve_calculator' [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/tve_calculator.vhd:60]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 16 - type: integer 
+	Parameter CORDIC_ITER bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'tve_calculator' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/tve_calculator.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'pmu_6ch_processing_256' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/ibrahim_lodhi.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'pmu_system_complete_256' (0#1) [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/8.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element packet_reg_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element ch1_valid_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element ch2_valid_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element ch3_valid_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element ch4_valid_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element ch5_valid_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/hehehehehe.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element final_product_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/sample_counter.vhd:242]
+WARNING: [Synth 8-6014] Unused sequential element multiplier_real_a_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:236]
+WARNING: [Synth 8-6014] Unused sequential element multiplier_real_b_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:237]
+WARNING: [Synth 8-6014] Unused sequential element multiplier_imag_a_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:263]
+WARNING: [Synth 8-6014] Unused sequential element multiplier_imag_b_reg was removed.  [/home/arunupscee/Desktop/xtortion/c37 compliance/vhdl_modules/dft.vhd:264]
+WARNING: [Synth 8-7129] Port mag_valid_ch2 in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mag_valid_ch3 in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mag_valid_ch4 in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mag_valid_ch5 in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mag_valid_ch6 in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[15] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[14] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[13] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[12] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[11] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[10] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[9] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[8] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[7] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[6] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[5] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[4] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[3] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[2] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[1] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_percent_ch1[0] in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_valid_ch1 in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_pass_ch1 in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tve_exceeds_ch1 in module c37118_packet_formatter_6ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[127] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[126] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[125] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[124] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[123] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[122] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[121] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[120] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[23] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[22] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[21] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[20] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[19] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[18] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[17] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[16] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[15] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[14] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[13] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[12] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[11] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[10] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[9] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[8] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[7] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[6] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[5] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[4] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[3] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[2] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[1] in module channel_extractor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port packet_in[0] in module channel_extractor is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2124.234 ; gain = 520.930 ; free physical = 3189 ; free virtual = 12715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2142.047 ; gain = 538.742 ; free physical = 3208 ; free virtual = 12734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2147.984 ; gain = 544.680 ; free physical = 3208 ; free virtual = 12735
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'samples_per_cycle_calc'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'position_calculator'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'sample_fetcher'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'dft_complex_calculator'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cordic_calculator_256'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'frequency_rocof_calculator_256'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'crc_ccitt_c37118'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'c37118_packet_formatter_6ch'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'tve_calculator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                   00000000000001 |                             0000
+               normalize |                   00000000000010 |                             0001
+                  lookup |                   00000000000100 |                             0010
+              iter1_mult |                   00000000001000 |                             0011
+               iter1_sub |                   00000000010000 |                             0100
+             iter1_scale |                   00000000100000 |                             0101
+              iter2_mult |                   00000001000000 |                             0110
+               iter2_sub |                   00000010000000 |                             0111
+             iter2_scale |                   00000100000000 |                             1000
+              iter3_mult |                   00001000000000 |                             1001
+               iter3_sub |                   00010000000000 |                             1010
+             iter3_scale |                   00100000000000 |                             1011
+              final_mult |                   01000000000000 |                             1100
+           output_result |                   10000000000000 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'samples_per_cycle_calc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+             calc_params |                             0010 |                               01
+                 enerate |                             0100 |                               10
+         output_position |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'position_calculator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          latch_position |                              001 |                              001
+               read_left |                              010 |                              010
+               wait_left |                              011 |                              011
+              read_right |                              100 |                              100
+              wait_right |                              101 |                              101
+          output_samples |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'sample_fetcher'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                         00000001 |                              000
+                    init |                         00000010 |                              001
+              fetch_addr |                         00000100 |                              010
+                wait_rom |                         00001000 |                              011
+                multiply |                         00010000 |                              100
+                   scale |                         00100000 |                              101
+              accumulate |                         01000000 |                              110
+              done_state |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'dft_complex_calculator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                   setup |                             0010 |                               01
+                 iterate |                             0100 |                               10
+                    done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'cordic_calculator_256'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+            first_sample |                              010 |                               01
+             calculating |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'frequency_rocof_calculator_256'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+              processing |                              010 |                               01
+               crc_ready |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'crc_ccitt_c37118'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                 capture |                              001 |                              001
+               send_word |                              010 |                              010
+                feed_crc |                              011 |                              011
+           feed_reserved |                              100 |                              100
+                wait_crc |                              101 |                              101
+           send_crc_word |                              110 |                              110
+                    done |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'c37118_packet_formatter_6ch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+               calc_diff |                              001 |                              001
+            cordic_error |                              010 |                              010
+              cordic_ref |                              011 |                              011
+                  divide |                              100 |                              100
+           output_result |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'tve_calculator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2219.523 ; gain = 616.219 ; free physical = 3134 ; free virtual = 12670
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   49 Bit       Adders := 1     
+	   3 Input   48 Bit       Adders := 6     
+	   2 Input   48 Bit       Adders := 6     
+	   3 Input   37 Bit       Adders := 12    
+	   2 Input   37 Bit       Adders := 6     
+	   2 Input   33 Bit       Adders := 10    
+	   3 Input   33 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 12    
+	   3 Input   32 Bit       Adders := 7     
+	   3 Input   17 Bit       Adders := 7     
+	   2 Input   17 Bit       Adders := 8     
+	   2 Input   16 Bit       Adders := 20    
+	   3 Input   16 Bit       Adders := 6     
+	   2 Input    9 Bit       Adders := 18    
+	   2 Input    8 Bit       Adders := 24    
+	   2 Input    5 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 9     
++---XORs : 
+	   2 Input     16 Bit         XORs := 8     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+	               64 Bit    Registers := 1     
+	               49 Bit    Registers := 1     
+	               48 Bit    Registers := 18    
+	               46 Bit    Registers := 6     
+	               37 Bit    Registers := 12    
+	               34 Bit    Registers := 6     
+	               33 Bit    Registers := 12    
+	               32 Bit    Registers := 142   
+	               17 Bit    Registers := 8     
+	               16 Bit    Registers := 133   
+	                9 Bit    Registers := 36    
+	                8 Bit    Registers := 49    
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 260   
++---Multipliers : 
+	              32x32  Multipliers := 6     
+	              23x32  Multipliers := 1     
+	              16x37  Multipliers := 6     
+	              16x33  Multipliers := 6     
+	              16x32  Multipliers := 6     
+	              15x33  Multipliers := 1     
+	              14x32  Multipliers := 7     
++---RAMs : 
+	               8K Bit	(512 X 16 bit)          RAMs := 6     
+	               4K Bit	(256 X 16 bit)          RAMs := 6     
++---ROMs : 
+	                    ROMs := 12    
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input   37 Bit        Muxes := 30    
+	   4 Input   37 Bit        Muxes := 12    
+	   2 Input   33 Bit        Muxes := 7     
+	   6 Input   33 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 44    
+	  14 Input   32 Bit        Muxes := 6     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 2     
+	  14 Input   16 Bit        Muxes := 6     
+	   2 Input   16 Bit        Muxes := 40    
+	   4 Input   16 Bit        Muxes := 6     
+	   3 Input   16 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 6     
+	   7 Input    9 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 6     
+	   4 Input    8 Bit        Muxes := 7     
+	   3 Input    8 Bit        Muxes := 12    
+	   8 Input    8 Bit        Muxes := 7     
+	   2 Input    8 Bit        Muxes := 12    
+	   2 Input    6 Bit        Muxes := 18    
+	   4 Input    5 Bit        Muxes := 6     
+	   3 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 6     
+	   7 Input    3 Bit        Muxes := 6     
+	   6 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 14    
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 162   
+	  14 Input    1 Bit        Muxes := 48    
+	   4 Input    1 Bit        Muxes := 66    
+	   7 Input    1 Bit        Muxes := 54    
+	   8 Input    1 Bit        Muxes := 20    
+	   3 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP recip_estimate0, operation Mode is: A*B.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: Generating DSP recip_estimate0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: Generating DSP recip_estimate0, operation Mode is: A*B.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: Generating DSP recip_estimate0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: Generating DSP nr_product0, operation Mode is: A*B.
+DSP Report: operator nr_product0 is absorbed into DSP nr_product0.
+DSP Report: operator nr_product0 is absorbed into DSP nr_product0.
+DSP Report: Generating DSP nr_product0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator nr_product0 is absorbed into DSP nr_product0.
+DSP Report: operator nr_product0 is absorbed into DSP nr_product0.
+DSP Report: Generating DSP stage2_product0, operation Mode is: A*B.
+DSP Report: operator stage2_product0 is absorbed into DSP stage2_product0.
+DSP Report: Generating DSP dft_inst/product_real0, operation Mode is: A*B.
+DSP Report: operator dft_inst/product_real0 is absorbed into DSP dft_inst/product_real0.
+DSP Report: Generating DSP p_0_out, operation Mode is: -A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator dft_inst/product_imag1 is absorbed into DSP p_0_out.
+DSP Report: Generating DSP recip_estimate0, operation Mode is: A*B.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: Generating DSP recip_estimate0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: Generating DSP recip_estimate0, operation Mode is: A*B.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: Generating DSP recip_estimate0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: operator recip_estimate0 is absorbed into DSP recip_estimate0.
+DSP Report: Generating DSP nr_product0, operation Mode is: A*B.
+DSP Report: operator nr_product0 is absorbed into DSP nr_product0.
+DSP Report: operator nr_product0 is absorbed into DSP nr_product0.
+DSP Report: Generating DSP nr_product0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator nr_product0 is absorbed into DSP nr_product0.
+DSP Report: operator nr_product0 is absorbed into DSP nr_product0.
+DSP Report: Generating DSP stage2_product0, operation Mode is: A*B.
+DSP Report: operator stage2_product0 is absorbed into DSP stage2_product0.
+DSP Report: Generating DSP ch1_master_inst/dft_inst/product_real0, operation Mode is: A*B.
+DSP Report: operator ch1_master_inst/dft_inst/product_real0 is absorbed into DSP ch1_master_inst/dft_inst/product_real0.
+DSP Report: Generating DSP p_0_out, operation Mode is: -A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator ch1_master_inst/dft_inst/product_imag1 is absorbed into DSP p_0_out.
+DSP Report: Generating DSP ch1_master_inst/freq_calc_inst/product_freq0, operation Mode is: (A:0x3faa38)*B.
+DSP Report: operator ch1_master_inst/freq_calc_inst/product_freq0 is absorbed into DSP ch1_master_inst/freq_calc_inst/product_freq0.
+DSP Report: Generating DSP ch1_master_inst/freq_calc_inst/product_rocof0, operation Mode is: (A:0x320000)*B.
+DSP Report: operator ch1_master_inst/freq_calc_inst/product_rocof0 is absorbed into DSP ch1_master_inst/freq_calc_inst/product_rocof0.
+DSP Report: operator ch1_master_inst/freq_calc_inst/product_rocof0 is absorbed into DSP ch1_master_inst/freq_calc_inst/product_rocof0.
+DSP Report: Generating DSP ch1_master_inst/freq_calc_inst/product_rocof0, operation Mode is: (PCIN>>17)+(A:0x320000)*B.
+DSP Report: operator ch1_master_inst/freq_calc_inst/product_rocof0 is absorbed into DSP ch1_master_inst/freq_calc_inst/product_rocof0.
+DSP Report: operator ch1_master_inst/freq_calc_inst/product_rocof0 is absorbed into DSP ch1_master_inst/freq_calc_inst/product_rocof0.
+RAM ("pmu_processing_top_no_freq:/resampler_inst/circular_buffer_inst/sample_memory_reg") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+RAM ("pmu_processing_top_no_freq:/dft_buffer_inst/sample_ram_reg") is too shallow (depth = 256) to use URAM. Choosing BRAM instead of URAM 
+RAM ("\ch1_master_inst/resampler_inst/circular_buffer_inst/sample_memory_reg ") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+RAM ("pmu_system_complete_256/ch1_master_inst/dft_buffer_inst/sample_ram_reg") is too shallow (depth = 256) to use URAM. Choosing BRAM instead of URAM 
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[47]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[46]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[45]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[44]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[43]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[42]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[41]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[40]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[39]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[38]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[37]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[36]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[35]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[34]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[33]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[32]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[31]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[30]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[29]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[28]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[27]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[26]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[25]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[24]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[23]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[22]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[21]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[20]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[19]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[18]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[17]) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[47]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[46]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[45]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[44]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[43]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[42]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[41]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[40]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[39]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[38]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[37]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[36]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[35]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[34]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[33]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[32]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[31]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[30]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[29]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[28]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[27]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[26]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[25]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[24]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[23]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[22]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[21]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[20]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[19]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[18]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[17]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[16]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[15]__0) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__31) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__32) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__33) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__34) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__35) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__36) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__37) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__38) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__39) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__40) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__41) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__42) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__43) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/result_reg_reg__44) is unused and will be removed from module resampler_top__1.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[47]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[46]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[45]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[44]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[43]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[42]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[41]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[40]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[39]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[38]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[37]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[36]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[35]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[34]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[33]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[32]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[31]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[30]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[29]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[28]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[27]) is unused and will be removed from module resampler_top.
+WARNING: [Synth 8-3332] Sequential element (samples_per_cycle_inst/nr_product_reg[26]) is unused and will be removed from module resampler_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3089.133 ; gain = 1485.828 ; free physical = 2297 ; free virtual = 11990
+---------------------------------------------------------------------------------
+ Sort Area is pmu_processing_top_no_freq recip_estimate0_0 : 0 0 : 3101 5879 : Used 5 time 0
+ Sort Area is pmu_processing_top_no_freq recip_estimate0_0 : 0 1 : 2778 5879 : Used 5 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 recip_estimate0_f : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 recip_estimate0_f : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 nr_product0_11 : 0 0 : 3017 5738 : Used 1 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 nr_product0_11 : 0 1 : 2721 5738 : Used 1 time 0
+ Sort Area is pmu_processing_top_no_freq nr_product0_6 : 0 0 : 3017 5738 : Used 5 time 0
+ Sort Area is pmu_processing_top_no_freq nr_product0_6 : 0 1 : 2721 5738 : Used 5 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 recip_estimate0_10 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 recip_estimate0_10 : 0 1 : 2659 5418 : Used 1 time 0
+ Sort Area is pmu_processing_top_no_freq recip_estimate0_3 : 0 0 : 2759 5418 : Used 5 time 0
+ Sort Area is pmu_processing_top_no_freq recip_estimate0_3 : 0 1 : 2659 5418 : Used 5 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 stage2_product0_12 : 0 0 : 2264 2264 : Used 1 time 0
+ Sort Area is pmu_processing_top_no_freq stage2_product0_9 : 0 0 : 2264 2264 : Used 5 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 p_0_out_14 : 0 0 : 2159 2159 : Used 1 time 0
+ Sort Area is pmu_processing_top_no_freq p_0_out_d : 0 0 : 2159 2159 : Used 5 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 ch1_master_inst/dft_inst/product_real0_13 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is pmu_processing_top_no_freq dft_inst/product_real0_b : 0 0 : 1937 1937 : Used 5 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 ch1_master_inst/freq_calc_inst/product_freq0_15 : 0 0 : 1671 1671 : Used 1 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 ch1_master_inst/freq_calc_inst/product_rocof0_17 : 0 0 : 1031 1486 : Used 1 time 0
+ Sort Area is pmu_6ch_processing_256__GCB0 ch1_master_inst/freq_calc_inst/product_rocof0_17 : 0 1 : 455 1486 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------------------+--------------+---------------+----------------+
+|Module Name                | RTL Object   | Depth x Width | Implemented As | 
++---------------------------+--------------+---------------+----------------+
+|samples_per_cycle_calc     | RECIP_LUT[0] | 64x25         | LUT            | 
+|samples_per_cycle_calc     | RECIP_LUT[0] | 64x25         | LUT            | 
+|pmu_processing_top_no_freq | p_0_out      | 256x16        | LUT            | 
+|pmu_processing_top_no_freq | p_0_out      | 256x16        | LUT            | 
+|samples_per_cycle_calc     | RECIP_LUT[0] | 64x25         | LUT            | 
+|pmu_system_complete_256    | p_0_out      | 256x16        | LUT            | 
+|pmu_system_complete_256    | p_0_out      | 256x16        | LUT            | 
++---------------------------+--------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------------------------------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                | RTL Object                                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|pmu_processing_top_no_freq:/resampler_inst | circular_buffer_inst/sample_memory_reg         | 512 x 16(WRITE_FIRST)  |   | R | 512 x 16(READ_FIRST)   | W |   | Port A and B     | 1      | 0      | 1               | 
+|pmu_processing_top_no_freq:                | dft_buffer_inst/sample_ram_reg                 | 256 x 16(WRITE_FIRST)  |   | R | 256 x 16(READ_FIRST)   | W |   | Port A and B     | 1      | 0      | 1               | 
+|\ch1_master_inst/resampler_inst            | circular_buffer_inst/sample_memory_reg         | 512 x 16(WRITE_FIRST)  |   | R | 512 x 16(READ_FIRST)   | W |   | Port A and B     | 1      | 0      | 1               | 
+|pmu_system_complete_256                    | ch1_master_inst/dft_buffer_inst/sample_ram_reg | 256 x 16(WRITE_FIRST)  |   | R | 256 x 16(READ_FIRST)   | W |   | Port A and B     | 1      | 0      | 1               | 
++-------------------------------------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                    | DSP Mapping               | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|samples_per_cycle_calc         | A*B                       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17)+A*B            | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B                       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17)+A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B                       | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17)+A*B            | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|interpolation_engine           | A*B                       | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dft_complex_calculator         | A*B                       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dft_complex_calculator         | -A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B                       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17)+A*B            | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B                       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17)+A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B                       | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17)+A*B            | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|interpolation_engine           | A*B                       | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dft_complex_calculator         | A*B                       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dft_complex_calculator         | -A*B                      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|frequency_rocof_calculator_256 | (A:0x3faa38)*B            | 23     | 17     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pmu_system_complete_256        | (A:0x320000)*B            | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pmu_system_complete_256        | (PCIN>>17)+(A:0x320000)*B | 23     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3089.133 ; gain = 1485.828 ; free physical = 2298 ; free virtual = 11991
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------------------------------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                | RTL Object                                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|pmu_processing_top_no_freq:/resampler_inst | circular_buffer_inst/sample_memory_reg         | 512 x 16(WRITE_FIRST)  |   | R | 512 x 16(READ_FIRST)   | W |   | Port A and B     | 1      | 0      | 1               | 
+|pmu_processing_top_no_freq:                | dft_buffer_inst/sample_ram_reg                 | 256 x 16(WRITE_FIRST)  |   | R | 256 x 16(READ_FIRST)   | W |   | Port A and B     | 1      | 0      | 1               | 
+|\ch1_master_inst/resampler_inst            | circular_buffer_inst/sample_memory_reg         | 512 x 16(WRITE_FIRST)  |   | R | 512 x 16(READ_FIRST)   | W |   | Port A and B     | 1      | 0      | 1               | 
+|pmu_system_complete_256                    | ch1_master_inst/dft_buffer_inst/sample_ram_reg | 256 x 16(WRITE_FIRST)  |   | R | 256 x 16(READ_FIRST)   | W |   | Port A and B     | 1      | 0      | 1               | 
++-------------------------------------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch2_slave_inst/resampler_inst/circular_buffer_inst/sample_memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch2_slave_inst/dft_buffer_inst/sample_ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch3_slave_inst/resampler_inst/circular_buffer_inst/sample_memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch3_slave_inst/dft_buffer_inst/sample_ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch4_slave_inst/resampler_inst/circular_buffer_inst/sample_memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch4_slave_inst/dft_buffer_inst/sample_ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch5_slave_inst/resampler_inst/circular_buffer_inst/sample_memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch5_slave_inst/dft_buffer_inst/sample_ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch6_slave_inst/resampler_inst/circular_buffer_inst/sample_memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch6_slave_inst/dft_buffer_inst/sample_ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch1_master_inst/resampler_inst/circular_buffer_inst/sample_memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pmu_processing_inst/ch1_master_inst/dft_buffer_inst/sample_ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3089.133 ; gain = 1485.828 ; free physical = 2317 ; free virtual = 11984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3155.945 ; gain = 1552.641 ; free physical = 2228 ; free virtual = 11895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3155.945 ; gain = 1552.641 ; free physical = 2228 ; free virtual = 11895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3155.945 ; gain = 1552.641 ; free physical = 2219 ; free virtual = 11886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3155.945 ; gain = 1552.641 ; free physical = 2219 ; free virtual = 11886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3155.945 ; gain = 1552.641 ; free physical = 2226 ; free virtual = 11894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3155.945 ; gain = 1552.641 ; free physical = 2226 ; free virtual = 11894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                    | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dft_complex_calculator         | ((A*B))'        | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | (A*B)'          | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|frequency_rocof_calculator_256 | (A*B)'          | 22     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|pmu_system_complete_256        | A*B             | 22     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pmu_system_complete_256        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|interpolation_engine           | (A*B)'          | 30     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|samples_per_cycle_calc         | A*B             | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17+A*B)' | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | ((A*B))'        | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | (A*B)'          | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|interpolation_engine           | (A*B)'          | 30     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|samples_per_cycle_calc         | A*B             | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17+A*B)' | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | ((A*B))'        | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | (A*B)'          | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|interpolation_engine           | (A*B)'          | 30     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|samples_per_cycle_calc         | A*B             | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17+A*B)' | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | ((A*B))'        | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | (A*B)'          | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|interpolation_engine           | (A*B)'          | 30     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|samples_per_cycle_calc         | A*B             | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17+A*B)' | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | ((A*B))'        | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | (A*B)'          | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|interpolation_engine           | (A*B)'          | 30     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|samples_per_cycle_calc         | A*B             | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17+A*B)' | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | ((A*B))'        | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dft_complex_calculator         | (A*B)'          | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|interpolation_engine           | (A*B)'          | 30     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|samples_per_cycle_calc         | A*B             | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | PCIN>>17+A*B    | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | A*B             | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|samples_per_cycle_calc         | (PCIN>>17+A*B)' | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++-------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     1|
+|2     |CARRY8          |   860|
+|3     |DSP48E2         |    31|
+|4     |DSP_ALU         |    26|
+|5     |DSP_A_B_DATA    |    26|
+|6     |DSP_C_DATA      |    26|
+|7     |DSP_MULTIPLIER  |    26|
+|8     |DSP_M_DATA      |    26|
+|9     |DSP_OUTPUT      |    26|
+|10    |DSP_PREADD      |    26|
+|11    |DSP_PREADD_DATA |    26|
+|12    |LUT1            |  1047|
+|13    |LUT2            |  3661|
+|14    |LUT3            |  2542|
+|15    |LUT4            |  1439|
+|16    |LUT5            |  2074|
+|17    |LUT6            |  3056|
+|18    |MUXF7           |   357|
+|19    |MUXF8           |   150|
+|20    |RAMB18E2        |    12|
+|21    |FDCE            |  8102|
+|22    |FDPE            |    90|
+|23    |FDRE            |   686|
+|24    |IBUF            |   134|
+|25    |OBUF            |   234|
++------+----------------+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------------------------------------------------------------------------+------+
+|      |Instance                          |Module                                                                           |Cells |
++------+----------------------------------+---------------------------------------------------------------------------------+------+
+|1     |top                               |                                                                                 | 24684|
+|2     |  input_interface_inst            |input_interface_complete                                                         |   918|
+|3     |    axi_receiver_inst             |axi_packet_receiver_128bit                                                       |   390|
+|4     |    channel_extractor_inst        |channel_extractor                                                                |   146|
+|5     |    packet_validator_inst         |packet_validator                                                                 |   382|
+|6     |  pmu_processing_inst             |pmu_6ch_processing_256                                                           | 22785|
+|7     |    p_0_out                       |\ch1_master_inst/resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__3  |     8|
+|8     |    ch1_master_inst               |pmu_processing_top                                                               |  4159|
+|9     |      cordic_inst                 |cordic_calculator_256_52                                                         |  1351|
+|10    |      cos_rom_inst                |cosine_single_k_rom_53                                                           |    17|
+|11    |      dft_buffer_inst             |dft_sample_buffer_54                                                             |     2|
+|12    |      dft_inst                    |dft_complex_calculator_55                                                        |   668|
+|13    |        product_real0             |\ch1_master_inst/resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__2  |     8|
+|14    |      freq_calc_inst              |frequency_rocof_calculator_256                                                   |   640|
+|15    |        product_freq0             |\ch1_master_inst/resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__4  |     8|
+|16    |        product_rocof0__0         |\ch1_master_inst/resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__5  |     8|
+|17    |      resampler_inst              |resampler_top_56                                                                 |  1419|
+|18    |        circular_buffer_inst      |circular_buffer_controller_58                                                    |    39|
+|19    |        cycle_tracker_inst        |cycle_tracker_59                                                                 |   268|
+|20    |        interpolation_engine_inst |interpolation_engine_60                                                          |   166|
+|21    |          stage2_product0         |\ch1_master_inst/resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__1  |     8|
+|22    |        position_calc_inst        |position_calculator_61                                                           |   280|
+|23    |        sample_fetcher_inst       |sample_fetcher_62                                                                |   128|
+|24    |        samples_per_cycle_inst    |samples_per_cycle_calc_63                                                        |   537|
+|25    |          nr_product0__0          |\ch1_master_inst/resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel     |     8|
+|26    |      sin_rom_inst                |sine_single_k_rom_57                                                             |    16|
+|27    |    ch2_slave_inst                |pmu_processing_top_no_freq                                                       |  3551|
+|28    |      p_0_out                     |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__4                  |     8|
+|29    |      cordic_inst                 |cordic_calculator_256_40                                                         |  1191|
+|30    |      cos_rom_inst                |cosine_single_k_rom_41                                                           |    18|
+|31    |      dft_buffer_inst             |dft_sample_buffer_42                                                             |     2|
+|32    |      dft_inst                    |dft_complex_calculator_43                                                        |   351|
+|33    |        product_real0             |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__5                  |     8|
+|34    |      resampler_inst              |resampler_top_44                                                                 |  1368|
+|35    |        circular_buffer_inst      |circular_buffer_controller_46                                                    |    39|
+|36    |        cycle_tracker_inst        |cycle_tracker_47                                                                 |   252|
+|37    |        interpolation_engine_inst |interpolation_engine_48                                                          |   161|
+|38    |          stage2_product0         |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__6                  |     8|
+|39    |        position_calc_inst        |position_calculator_49                                                           |   271|
+|40    |        sample_fetcher_inst       |sample_fetcher_50                                                                |   112|
+|41    |        samples_per_cycle_inst    |samples_per_cycle_calc_51                                                        |   532|
+|42    |          nr_product0__0          |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__7                  |     8|
+|43    |      sin_rom_inst                |sine_single_k_rom_45                                                             |    16|
+|44    |    ch3_slave_inst                |pmu_processing_top_no_freq_0                                                     |  3551|
+|45    |      p_0_out                     |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__8                  |     8|
+|46    |      cordic_inst                 |cordic_calculator_256_28                                                         |  1191|
+|47    |      cos_rom_inst                |cosine_single_k_rom_29                                                           |    18|
+|48    |      dft_buffer_inst             |dft_sample_buffer_30                                                             |     2|
+|49    |      dft_inst                    |dft_complex_calculator_31                                                        |   351|
+|50    |        product_real0             |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__9                  |     8|
+|51    |      resampler_inst              |resampler_top_32                                                                 |  1368|
+|52    |        circular_buffer_inst      |circular_buffer_controller_34                                                    |    39|
+|53    |        cycle_tracker_inst        |cycle_tracker_35                                                                 |   252|
+|54    |        interpolation_engine_inst |interpolation_engine_36                                                          |   161|
+|55    |          stage2_product0         |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__10                 |     8|
+|56    |        position_calc_inst        |position_calculator_37                                                           |   271|
+|57    |        sample_fetcher_inst       |sample_fetcher_38                                                                |   112|
+|58    |        samples_per_cycle_inst    |samples_per_cycle_calc_39                                                        |   532|
+|59    |          nr_product0__0          |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__11                 |     8|
+|60    |      sin_rom_inst                |sine_single_k_rom_33                                                             |    16|
+|61    |    ch4_slave_inst                |pmu_processing_top_no_freq_1                                                     |  3551|
+|62    |      p_0_out                     |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__12                 |     8|
+|63    |      cordic_inst                 |cordic_calculator_256_16                                                         |  1191|
+|64    |      cos_rom_inst                |cosine_single_k_rom_17                                                           |    18|
+|65    |      dft_buffer_inst             |dft_sample_buffer_18                                                             |     2|
+|66    |      dft_inst                    |dft_complex_calculator_19                                                        |   351|
+|67    |        product_real0             |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__13                 |     8|
+|68    |      resampler_inst              |resampler_top_20                                                                 |  1368|
+|69    |        circular_buffer_inst      |circular_buffer_controller_22                                                    |    39|
+|70    |        cycle_tracker_inst        |cycle_tracker_23                                                                 |   252|
+|71    |        interpolation_engine_inst |interpolation_engine_24                                                          |   161|
+|72    |          stage2_product0         |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__14                 |     8|
+|73    |        position_calc_inst        |position_calculator_25                                                           |   271|
+|74    |        sample_fetcher_inst       |sample_fetcher_26                                                                |   112|
+|75    |        samples_per_cycle_inst    |samples_per_cycle_calc_27                                                        |   532|
+|76    |          nr_product0__0          |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__15                 |     8|
+|77    |      sin_rom_inst                |sine_single_k_rom_21                                                             |    16|
+|78    |    ch5_slave_inst                |pmu_processing_top_no_freq_2                                                     |  3551|
+|79    |      p_0_out                     |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__16                 |     8|
+|80    |      cordic_inst                 |cordic_calculator_256_4                                                          |  1191|
+|81    |      cos_rom_inst                |cosine_single_k_rom_5                                                            |    18|
+|82    |      dft_buffer_inst             |dft_sample_buffer_6                                                              |     2|
+|83    |      dft_inst                    |dft_complex_calculator_7                                                         |   351|
+|84    |        product_real0             |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__17                 |     8|
+|85    |      resampler_inst              |resampler_top_8                                                                  |  1368|
+|86    |        circular_buffer_inst      |circular_buffer_controller_10                                                    |    39|
+|87    |        cycle_tracker_inst        |cycle_tracker_11                                                                 |   252|
+|88    |        interpolation_engine_inst |interpolation_engine_12                                                          |   161|
+|89    |          stage2_product0         |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__18                 |     8|
+|90    |        position_calc_inst        |position_calculator_13                                                           |   271|
+|91    |        sample_fetcher_inst       |sample_fetcher_14                                                                |   112|
+|92    |        samples_per_cycle_inst    |samples_per_cycle_calc_15                                                        |   532|
+|93    |          nr_product0__0          |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__19                 |     8|
+|94    |      sin_rom_inst                |sine_single_k_rom_9                                                              |    16|
+|95    |    ch6_slave_inst                |pmu_processing_top_no_freq_3                                                     |  3553|
+|96    |      p_0_out                     |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__3                  |     8|
+|97    |      cordic_inst                 |cordic_calculator_256                                                            |  1191|
+|98    |      cos_rom_inst                |cosine_single_k_rom                                                              |    18|
+|99    |      dft_buffer_inst             |dft_sample_buffer                                                                |     2|
+|100   |      dft_inst                    |dft_complex_calculator                                                           |   351|
+|101   |        product_real0             |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__2                  |     8|
+|102   |      resampler_inst              |resampler_top                                                                    |  1369|
+|103   |        circular_buffer_inst      |circular_buffer_controller                                                       |    40|
+|104   |        cycle_tracker_inst        |cycle_tracker                                                                    |   252|
+|105   |        interpolation_engine_inst |interpolation_engine                                                             |   161|
+|106   |          stage2_product0         |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel__1                  |     8|
+|107   |        position_calc_inst        |position_calculator                                                              |   271|
+|108   |        sample_fetcher_inst       |sample_fetcher                                                                   |   112|
+|109   |        samples_per_cycle_inst    |samples_per_cycle_calc                                                           |   532|
+|110   |          nr_product0__0          |\resampler_inst/samples_per_cycle_inst/nr_product0__0_funnel                     |     8|
+|111   |      sin_rom_inst                |sine_single_k_rom                                                                |    16|
+|112   |    packet_creator_inst           |c37118_packet_formatter_6ch                                                      |   861|
+|113   |      crc_inst                    |crc_ccitt_c37118                                                                 |    61|
++------+----------------------------------+---------------------------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3155.945 ; gain = 1552.641 ; free physical = 2226 ; free virtual = 11894
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 228 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3155.945 ; gain = 1552.641 ; free physical = 2226 ; free virtual = 11894
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3155.953 ; gain = 1552.641 ; free physical = 2226 ; free virtual = 11894
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3180.727 ; gain = 0.000 ; free physical = 2339 ; free virtual = 12007
+INFO: [Netlist 29-17] Analyzing 1559 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3343.902 ; gain = 0.000 ; free physical = 2242 ; free virtual = 11932
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 192 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 57 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 134 instances
+
+Synth Design complete | Checksum: b46f7a11
+INFO: [Common 17-83] Releasing license: Synthesis
+134 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 3343.938 ; gain = 1740.633 ; free physical = 2241 ; free virtual = 11932
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2540.437; main = 2537.165; forked = 274.332
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4053.047; main = 3343.906; forked = 963.910
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3367.914 ; gain = 0.000 ; free physical = 2232 ; free virtual = 11926
+INFO: [Common 17-1381] The checkpoint '/home/arunupscee/Desktop/xtortion/c37 compliance/c37 compliance.runs/synth_1/pmu_system_complete_256.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file pmu_system_complete_256_utilization_synth.rpt -pb pmu_system_complete_256_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  9 18:29:13 2026...
